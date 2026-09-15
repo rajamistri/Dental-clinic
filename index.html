@@ -1,1880 +1,1265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dentéra Dental Clinic — Modern Dentistry. Confident Smiles. | New York, NY</title>
+<meta name="description" content="Dentéra is a premium private dental clinic in New York, NY offering general, cosmetic, implant, orthodontic and restorative dentistry. Book your consultation today.">
+<meta name="theme-color" content="#0B7285">
 
-    <meta name="description" content="DENTÉRA — Modern dentistry focused on your comfort, confidence, and long-term oral health.">
-    <meta name="theme-color" content="#071F28">
+<!-- Google Fonts (Manrope + Inter) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <title>DENTÉRA — Modern Dentistry. Confident Smiles.</title>
+<!-- Font Awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
+<!-- Local styles -->
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- =====================================================
-     PAGE LOADER
-===================================================== -->
-<div class="page-loader">
-    <div class="loader-logo">DENTÉRA</div>
-    <div class="loader-line">
-        <span></span>
-    </div>
-</div>
-
-
-<!-- =====================================================
-     ANNOUNCEMENT
-===================================================== -->
-<div class="announcement">
-    <div class="announcement-inner">
-        <span>
-            <i class="fa-regular fa-sparkles"></i>
-            New Patients Welcome
-        </span>
-
-        <span class="announcement-dot"></span>
-
-        <span>Complimentary Initial Consultation</span>
-
-        <a href="tel:+15551234567">
-            <i class="fa-solid fa-phone"></i>
-            +1 (555) 123-4567
-        </a>
-    </div>
-</div>
-
-
-<!-- =====================================================
-     NAVIGATION
-===================================================== -->
+<!-- ============================================================
+     01. TOP ANNOUNCEMENT BAR
+     ============================================================ -->
 <header class="site-header" id="siteHeader">
-
-    <div class="nav-wrap">
-
-        <a href="#home" class="brand">
-            <span class="brand-mark">
-                <span></span>
-                <span></span>
-            </span>
-
-            <span class="brand-name">DENTÉRA</span>
-        </a>
-
-
-        <nav class="desktop-nav">
-            <a href="#home" class="nav-link active">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#dentists" class="nav-link">Dentists</a>
-            <a href="#results" class="nav-link">Results</a>
-            <a href="#testimonials" class="nav-link">Stories</a>
-            <a href="#faq" class="nav-link">FAQ</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </nav>
-
-
-        <a href="#contact" class="nav-cta">
-            <span>Book Appointment</span>
-            <i class="fa-solid fa-arrow-up-right"></i>
-        </a>
-
-
-        <button class="menu-toggle"
-                type="button"
-                aria-label="Open navigation"
-                aria-expanded="false">
-            <span></span>
-            <span></span>
-        </button>
-
+    <div class="topbar">
+        <div class="container topbar__inner">
+            <p class="topbar__note">
+                <i class="fa-solid fa-tooth" aria-hidden="true"></i>
+                <span>New Patients Welcome <span aria-hidden="true">•</span> Complimentary Initial Consultation</span>
+            </p>
+            <div class="topbar__right">
+                <a class="topbar__phone" href="tel:+15551234567">
+                    <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                    +1 (555) 123-4567
+                </a>
+                <span class="topbar__divider" aria-hidden="true"></span>
+                <a class="topbar__phone" href="mailto:hello@denteraclinic.com">
+                    <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                    hello@denteraclinic.com
+                </a>
+            </div>
+        </div>
     </div>
 
+    <!-- ============================================================
+         02. STICKY NAVIGATION
+         ============================================================ -->
+    <nav class="nav" aria-label="Main navigation">
+        <div class="container nav__inner">
+            <a class="brand" href="#home" aria-label="Dentéra Dental Clinic — home">
+                <span class="brand__mark" aria-hidden="true"><i class="fa-solid fa-tooth"></i></span>
+                <span class="brand__text">
+                    <span class="brand__name">DENTÉRA</span>
+                    <span class="brand__tag">Modern Dentistry</span>
+                </span>
+            </a>
 
-    <div class="mobile-nav">
+            <ul class="nav__links">
+                <li><a class="nav__link active" href="#home">Home</a></li>
+                <li><a class="nav__link" href="#about">About</a></li>
+                <li><a class="nav__link" href="#services">Services</a></li>
+                <li><a class="nav__link" href="#dentists">Dentists</a></li>
+                <li><a class="nav__link" href="#results">Results</a></li>
+                <li><a class="nav__link" href="#testimonials">Testimonials</a></li>
+                <li><a class="nav__link" href="#faq">FAQ</a></li>
+                <li><a class="nav__link" href="#contact">Contact</a></li>
+            </ul>
 
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#dentists">Dentists</a>
-        <a href="#results">Results</a>
-        <a href="#testimonials">Stories</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-
-        <a href="#contact" class="mobile-book">
-            Book an Appointment
-            <i class="fa-solid fa-arrow-up-right"></i>
-        </a>
-
-    </div>
-
+            <div class="nav__actions">
+                <a class="nav__call" href="tel:+15551234567">
+                    <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                    <span>+1 (555) 123-4567</span>
+                </a>
+                <a class="btn btn-primary btn-sm" href="#appointment">
+                    <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                    Book Appointment
+                </a>
+                <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                    <span class="nav-toggle__bar"></span>
+                </button>
+            </div>
+        </div>
+        <span class="scroll-progress" aria-hidden="true"></span>
+    </nav>
 </header>
 
+<!-- Mobile drawer -->
+<div class="menu-overlay" aria-hidden="true"></div>
+<aside class="mobile-menu" id="mobileMenu" aria-hidden="true" aria-label="Mobile navigation">
+    <div class="mobile-menu__head">
+        <span class="brand">
+            <span class="brand__mark" aria-hidden="true"><i class="fa-solid fa-tooth"></i></span>
+            <span class="brand__text">
+                <span class="brand__name">DENTÉRA</span>
+                <span class="brand__tag">Modern Dentistry</span>
+            </span>
+        </span>
+        <button class="mobile-menu__close" type="button" aria-label="Close menu">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <ul class="mobile-menu__links">
+        <li><a class="mobile-menu__link" href="#home">Home <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a class="mobile-menu__link" href="#about">About <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a class="mobile-menu__link" href="#services">Services <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a class="mobile-menu__link" href="#dentists">Dentists <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a class="mobile-menu__link" href="#results">Results <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a class="mobile-menu__link" href="#testimonials">Testimonials <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a class="mobile-menu__link" href="#faq">FAQ <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+        <li><a class="mobile-menu__link" href="#contact">Contact <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></a></li>
+    </ul>
+
+    <div class="mobile-menu__foot">
+        <a class="btn btn-primary btn-block" href="#appointment">
+            <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+            Book Appointment
+        </a>
+        <ul class="mobile-menu__meta">
+            <li><a href="tel:+15551234567"><i class="fa-solid fa-phone-volume" aria-hidden="true"></i> +1 (555) 123-4567</a></li>
+            <li><a href="mailto:hello@denteraclinic.com"><i class="fa-regular fa-envelope" aria-hidden="true"></i> hello@denteraclinic.com</a></li>
+            <li><span><i class="fa-regular fa-clock" aria-hidden="true"></i> Mon–Fri 9:00 AM – 6:00 PM</span></li>
+        </ul>
+    </div>
+</aside>
 
 <main>
 
-
-<!-- =====================================================
-     HERO
-===================================================== -->
-<section class="hero" id="home">
-
-    <div class="hero-noise"></div>
-    <div class="hero-orb hero-orb-one"></div>
-    <div class="hero-orb hero-orb-two"></div>
-
-    <div class="hero-grid-line hero-grid-line-one"></div>
-    <div class="hero-grid-line hero-grid-line-two"></div>
-
-
-    <div class="container hero-container">
-
-        <div class="hero-content">
-
-            <div class="hero-eyebrow reveal-up">
-                <span class="eyebrow-line"></span>
-                Advanced Dental Care
-            </div>
-
-
-            <h1 class="hero-title">
-                <span class="hero-title-line reveal-up">Your healthiest</span>
-                <span class="hero-title-line reveal-up delay-1">
-                    <em>smile</em> starts here.
-                </span>
-            </h1>
-
-
-            <p class="hero-description reveal-up delay-2">
-                Modern dentistry focused on your comfort, confidence,
-                and long-term oral health.
-            </p>
-
-
-            <div class="hero-actions reveal-up delay-3">
-
-                <a href="#contact" class="magnetic-btn magnetic-btn-light">
-                    <span>Book an Appointment</span>
-                    <i class="fa-solid fa-arrow-up-right"></i>
-                </a>
-
-                <a href="#services" class="text-link">
-                    Explore Treatments
-                    <i class="fa-solid fa-arrow-down"></i>
-                </a>
-
-            </div>
-
-
-            <div class="hero-trust reveal-up delay-4">
-
-                <div class="trust-stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-
-                <div>
-                    <strong>4.9/5</strong>
-                    <span>Trusted by 3,000+ patients</span>
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="hero-visual">
-
-            <div class="hero-image-wrap">
-
-                <div class="hero-image-glow"></div>
-
-                <img
-                    src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1200&q=85"
-                    alt="Dental professional treating a patient"
-                    class="hero-image">
-
-                <div class="hero-image-overlay"></div>
-
-            </div>
-
-
-            <div class="hero-floating-card experience-card reveal-card">
-
-                <div class="floating-icon">
-                    <i class="fa-regular fa-calendar-check"></i>
-                </div>
-
-                <div>
-                    <strong>15+</strong>
-                    <span>Years of Excellence</span>
-                </div>
-
-            </div>
-
-
-            <div class="hero-floating-card patients-card reveal-card delay-2">
-
-                <div class="avatar-stack">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <b>+</b>
-                </div>
-
-                <div>
-                    <strong>3,000+</strong>
-                    <span>Happy Patients</span>
-                </div>
-
-            </div>
-
-
-            <div class="hero-rating-card reveal-card delay-3">
-
-                <div class="rating-number">4.9</div>
-
-                <div class="rating-info">
-                    <div class="mini-stars">
-                        ★★★★★
-                    </div>
-                    <span>Patient Rating</span>
-                </div>
-
-            </div>
-
-
-            <div class="hero-scroll">
-                <span>Scroll to explore</span>
-                <div class="scroll-arrow">
-                    <i class="fa-solid fa-arrow-down"></i>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <div class="hero-bottom-label">
-        <span>NYC</span>
-        <span class="hero-bottom-line"></span>
-        <span>EST. 2011</span>
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     STATS
-===================================================== -->
-<section class="stats-section">
-
-    <div class="container">
-
-        <div class="stats-grid">
-
-            <div class="stat-item reveal-up">
-                <span class="stat-index">01</span>
-                <strong data-count="15">0</strong>
-                <span class="stat-plus">+</span>
-                <p>Years of Experience</p>
-            </div>
-
-            <div class="stat-item reveal-up delay-1">
-                <span class="stat-index">02</span>
-                <strong data-count="3000">0</strong>
-                <span class="stat-plus">+</span>
-                <p>Happy Patients</p>
-            </div>
-
-            <div class="stat-item reveal-up delay-2">
-                <span class="stat-index">03</span>
-                <strong data-count="25">0</strong>
-                <span class="stat-plus">+</span>
-                <p>Dental Treatments</p>
-            </div>
-
-            <div class="stat-item reveal-up delay-3">
-                <strong>4.9</strong>
-                <span class="stat-small">/5</span>
-                <p>Patient Rating</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     SERVICES
-===================================================== -->
-<section class="services-section section-space" id="services">
-
-    <div class="container">
-
-        <div class="section-intro split-intro reveal-up">
-
-            <div>
-                <span class="section-kicker">01 / Treatments</span>
-
-                <h2>
-                    Complete dental care.
-                    <em>Beautifully delivered.</em>
-                </h2>
-            </div>
-
-            <div class="intro-side">
-
-                <p>
-                    From everyday preventive care to complete smile
-                    transformations, every treatment is designed
-                    around you.
+    <!-- ============================================================
+         03. HERO
+         ============================================================ -->
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+        <span class="hero__blob hero__blob--1" aria-hidden="true"></span>
+        <span class="hero__blob hero__blob--2" aria-hidden="true"></span>
+
+        <div class="container hero__grid">
+            <div class="hero__content reveal">
+                <span class="eyebrow">Advanced Dental Care</span>
+                <h1 class="hero__title" id="heroTitle">Your Healthiest <em>Smile</em> Starts Here.</h1>
+                <p class="hero__text lead">
+                    Modern dentistry focused on your comfort, confidence, and long-term oral health.
+                    From routine check-ups to complete smile makeovers, Dentéra brings specialist care,
+                    advanced technology and a calm, patient-first environment together in one place.
                 </p>
 
-                <a href="#contact" class="circle-link">
-                    <i class="fa-solid fa-arrow-up-right"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <div class="services-list">
-
-
-            <article class="service-row reveal-up">
-
-                <div class="service-number">01</div>
-
-                <div class="service-main">
-                    <div class="service-icon">
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-
-                    <h3>General Dentistry</h3>
+                <div class="hero__actions">
+                    <a class="btn btn-primary" href="#appointment">
+                        <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                        Book an Appointment
+                    </a>
+                    <a class="btn btn-outline" href="#services">
+                        Explore Treatments
+                        <i class="fa-solid fa-arrow-right arrow" aria-hidden="true"></i>
+                    </a>
                 </div>
 
-                <p>
-                    Preventive and restorative care that keeps
-                    your smile healthy for years to come.
+                <div class="trust-row">
+                    <div class="trust-row__avatars" aria-hidden="true">
+                        <span>OM</span><span>JC</span><span>DL</span><span>+</span>
+                    </div>
+                    <div class="trust-row__meta">
+                        <span class="stars" aria-label="Rated 4.9 out of 5">
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                            <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        </span>
+                        <strong>Trusted by 3,000+ patients</strong>
+                        <small>Rated 4.9/5 across 480+ verified reviews</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__media reveal reveal--zoom">
+                <div class="hero__frame">
+                    <img class="hero__img"
+                         src="https://images.pexels.com/photos/5355864/pexels-photo-5355864.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1100&w=880"
+                         alt="Dentist at Dentéra seated in a modern, brightly lit dental treatment room"
+                         width="880" height="1100" loading="eager" decoding="async">
+                    <span class="hero__badge">
+                        <i class="fa-solid fa-shield-heart" aria-hidden="true"></i>
+                        Pain-free, gentle treatments
+                    </span>
+                </div>
+
+                <div class="hero__floats">
+                    <article class="float-card float-card--1">
+                        <span class="float-card__icon" aria-hidden="true"><i class="fa-solid fa-award"></i></span>
+                        <span class="float-card__body">
+                            <strong>15+ Years</strong>
+                            <span>Clinical Experience</span>
+                        </span>
+                    </article>
+                    <article class="float-card float-card--2">
+                        <span class="float-card__icon" aria-hidden="true"><i class="fa-solid fa-user-group"></i></span>
+                        <span class="float-card__body">
+                            <strong>3,000+</strong>
+                            <span>Happy Patients</span>
+                        </span>
+                    </article>
+                    <article class="float-card float-card--3">
+                        <span class="float-card__icon" aria-hidden="true"><i class="fa-solid fa-star"></i></span>
+                        <span class="float-card__body">
+                            <strong>4.9 / 5</strong>
+                            <span>Patient Rating</span>
+                        </span>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         04. TRUST STATISTICS
+         ============================================================ -->
+    <section class="stats container" aria-label="Clinic statistics">
+        <div class="stats__grid reveal">
+            <div class="stat">
+                <span class="stat__icon" aria-hidden="true"><i class="fa-solid fa-award"></i></span>
+                <strong class="stat__num" data-counter="15" data-suffix="+">15+</strong>
+                <span class="stat__label">Years Experience</span>
+            </div>
+            <div class="stat">
+                <span class="stat__icon" aria-hidden="true"><i class="fa-solid fa-heart-pulse"></i></span>
+                <strong class="stat__num" data-counter="3000" data-suffix="+">3,000+</strong>
+                <span class="stat__label">Happy Patients</span>
+            </div>
+            <div class="stat">
+                <span class="stat__icon" aria-hidden="true"><i class="fa-solid fa-tooth"></i></span>
+                <strong class="stat__num" data-counter="25" data-suffix="+">25+</strong>
+                <span class="stat__label">Dental Treatments</span>
+            </div>
+            <div class="stat">
+                <span class="stat__icon" aria-hidden="true"><i class="fa-solid fa-star"></i></span>
+                <strong class="stat__num" data-counter="4.9" data-decimals="1" data-suffix="/5">4.9/5</strong>
+                <span class="stat__label">Patient Rating</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         05. SERVICES
+         ============================================================ -->
+    <section class="section section--alt" id="services" aria-labelledby="servicesTitle">
+        <div class="container">
+            <div class="section__head section__head--center reveal">
+                <span class="eyebrow eyebrow--center">Our Treatments</span>
+                <h2 class="section__title" id="servicesTitle">Complete Dental Care Under One Roof</h2>
+                <p class="section__desc">
+                    From preventive care to advanced cosmetic and restorative treatments, our team provides
+                    personalized care for every smile.
                 </p>
-
-                <a href="#contact" class="service-arrow">
-                    <i class="fa-solid fa-arrow-up-right"></i>
-                </a>
-
-            </article>
-
-
-            <article class="service-row reveal-up">
-
-                <div class="service-number">02</div>
-
-                <div class="service-main">
-                    <div class="service-icon">
-                        <i class="fa-regular fa-face-smile"></i>
-                    </div>
-
-                    <h3>Cosmetic Dentistry</h3>
-                </div>
-
-                <p>
-                    Refined smile enhancements designed
-                    to look naturally yours.
-                </p>
-
-                <a href="#contact" class="service-arrow">
-                    <i class="fa-solid fa-arrow-up-right"></i>
-                </a>
-
-            </article>
-
-
-            <article class="service-row reveal-up">
-
-                <div class="service-number">03</div>
-
-                <div class="service-main">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-tooth"></i>
-                    </div>
-
-                    <h3>Dental Implants</h3>
-                </div>
-
-                <p>
-                    Stable, natural-looking tooth replacement
-                    using modern implant technology.
-                </p>
-
-                <a href="#contact" class="service-arrow">
-                    <i class="fa-solid fa-arrow-up-right"></i>
-                </a>
-
-            </article>
-
-
-            <article class="service-row reveal-up">
-
-                <div class="service-number">04</div>
-
-                <div class="service-main">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
-
-                    <h3>Teeth Whitening</h3>
-                </div>
-
-                <p>
-                    Professional whitening for a brighter,
-                    fresher and more confident smile.
-                </p>
-
-                <a href="#contact" class="service-arrow">
-                    <i class="fa-solid fa-arrow-up-right"></i>
-                </a>
-
-            </article>
-
-
-            <article class="service-row reveal-up">
-
-                <div class="service-number">05</div>
-
-                <div class="service-main">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-grip-lines"></i>
-                    </div>
-
-                    <h3>Orthodontics</h3>
-                </div>
-
-                <p>
-                    Modern solutions for straighter teeth
-                    and a more balanced smile.
-                </p>
-
-                <a href="#contact" class="service-arrow">
-                    <i class="fa-solid fa-arrow-up-right"></i>
-                </a>
-
-            </article>
-
-
-            <article class="service-row reveal-up">
-
-                <div class="service-number">06</div>
-
-                <div class="service-main">
-                    <div class="service-icon">
-                        <i class="fa-solid fa-syringe"></i>
-                    </div>
-
-                    <h3>Root Canal Treatment</h3>
-                </div>
-
-                <p>
-                    Gentle, precise treatment focused on
-                    preserving your natural tooth.
-                </p>
-
-                <a href="#contact" class="service-arrow">
-                    <i class="fa-solid fa-arrow-up-right"></i>
-                </a>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     ABOUT
-===================================================== -->
-<section class="about-section section-space" id="about">
-
-    <div class="container about-grid">
-
-        <div class="about-visual reveal-left">
-
-            <div class="about-image-main">
-                <img
-                    src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1000&q=85"
-                    alt="Modern dental clinic interior">
             </div>
 
-            <div class="about-image-small">
-                <img
-                    src="https://images.unsplash.com/photo-1588776814546-daab30f310ce?auto=format&fit=crop&w=600&q=85"
-                    alt="Dental equipment">
-            </div>
-
-            <div class="experience-badge">
-                <span>Since</span>
-                <strong>2011</strong>
-            </div>
-
-        </div>
-
-
-        <div class="about-content reveal-right">
-
-            <span class="section-kicker">02 / Our Approach</span>
-
-            <h2>
-                Modern dentistry.
-                <em>Personal care.</em>
-            </h2>
-
-            <p class="about-lead">
-                We believe exceptional dentistry should feel
-                different. More personal. More thoughtful.
-                More comfortable.
-            </p>
-
-            <p>
-                DENTÉRA combines experienced clinicians,
-                advanced technology and a calm environment
-                to make every visit feel considered from
-                beginning to end.
-            </p>
-
-
-            <div class="benefits-list">
-
-                <div class="benefit">
-                    <span>01</span>
-                    <div>
-                        <strong>Experienced Dentists</strong>
-                        <p>Highly trained specialists who care about the details.</p>
-                    </div>
-                </div>
-
-                <div class="benefit">
-                    <span>02</span>
-                    <div>
-                        <strong>Personalized Treatment</strong>
-                        <p>Your treatment is planned around your individual goals.</p>
-                    </div>
-                </div>
-
-                <div class="benefit">
-                    <span>03</span>
-                    <div>
-                        <strong>Patient-First Experience</strong>
-                        <p>Clear communication and comfort at every step.</p>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <a href="#contact" class="outline-btn">
-                Meet Your Dental Team
-                <i class="fa-solid fa-arrow-up-right"></i>
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     WHY CHOOSE US / DARK EXPERIENCE
-===================================================== -->
-<section class="dark-experience section-space">
-
-    <div class="dark-glow"></div>
-
-    <div class="container">
-
-        <div class="dark-heading reveal-up">
-
-            <span class="section-kicker light-kicker">03 / The DENTÉRA Difference</span>
-
-            <h2>
-                Dentistry designed
-                <br>
-                <em>around you.</em>
-            </h2>
-
-            <p>
-                Every detail of your experience matters —
-                from the technology behind your diagnosis
-                to the way you feel when you leave.
-            </p>
-
-        </div>
-
-
-        <div class="difference-grid">
-
-            <div class="difference-card reveal-up">
-
-                <span class="difference-number">01</span>
-
-                <div class="difference-icon">
-                    <i class="fa-solid fa-user-doctor"></i>
-                </div>
-
-                <h3>Experienced Specialists</h3>
-
-                <p>
-                    A multidisciplinary team bringing years
-                    of clinical experience to every smile.
-                </p>
-
-                <div class="difference-line"></div>
-
-            </div>
-
-
-            <div class="difference-card featured reveal-up delay-1">
-
-                <span class="difference-number">02</span>
-
-                <div class="difference-icon">
-                    <i class="fa-solid fa-microscope"></i>
-                </div>
-
-                <h3>Advanced Technology</h3>
-
-                <p>
-                    Digital diagnostics and modern treatment
-                    systems for precise, predictable care.
-                </p>
-
-                <div class="difference-line"></div>
-
-            </div>
-
-
-            <div class="difference-card reveal-up delay-2">
-
-                <span class="difference-number">03</span>
-
-                <div class="difference-icon">
-                    <i class="fa-regular fa-face-smile"></i>
-                </div>
-
-                <h3>Gentle & Comfortable</h3>
-
-                <p>
-                    A calm clinical environment designed
-                    to make dental care feel easier.
-                </p>
-
-                <div class="difference-line"></div>
-
-            </div>
-
-
-            <div class="difference-card reveal-up delay-3">
-
-                <span class="difference-number">04</span>
-
-                <div class="difference-icon">
-                    <i class="fa-regular fa-file-lines"></i>
-                </div>
-
-                <h3>Transparent Plans</h3>
-
-                <p>
-                    Straightforward recommendations,
-                    treatment plans and conversations.
-                </p>
-
-                <div class="difference-line"></div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     TECHNOLOGY
-===================================================== -->
-<section class="technology-section section-space">
-
-    <div class="container technology-grid">
-
-        <div class="technology-content reveal-left">
-
-            <span class="section-kicker">04 / Technology</span>
-
-            <h2>
-                Technology that
-                <em>makes dentistry better.</em>
-            </h2>
-
-            <p>
-                Better information means better decisions.
-                We use modern digital tools to understand,
-                plan and treat with greater precision.
-            </p>
-
-
-            <div class="technology-features">
-
-                <div>
-                    <span>01</span>
-                    <strong>Digital X-rays</strong>
-                </div>
-
-                <div>
-                    <span>02</span>
-                    <strong>3D Dental Scanning</strong>
-                </div>
-
-                <div>
-                    <span>03</span>
-                    <strong>Digital Treatment Planning</strong>
-                </div>
-
-                <div>
-                    <span>04</span>
-                    <strong>Modern Treatment Equipment</strong>
-                </div>
-
-            </div>
-
-
-            <div class="technology-highlight">
-                <i class="fa-solid fa-arrow-right"></i>
-
-                <span>
-                    Less discomfort.
-                    <strong>Faster diagnosis.</strong>
-                    Better results.
-                </span>
-            </div>
-
-        </div>
-
-
-        <div class="technology-visual reveal-right">
-
-            <div class="tech-image-wrap">
-
-                <img
-                    src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1000&q=85"
-                    alt="Advanced dental technology">
-
-                <div class="scan-overlay">
-
-                    <span class="scan-line"></span>
-
-                    <span class="scan-point point-one"></span>
-                    <span class="scan-point point-two"></span>
-                    <span class="scan-point point-three"></span>
-
-                </div>
-
-                <div class="tech-label">
-                    <span>Digital Precision</span>
-                    <strong>01</strong>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     TEAM
-===================================================== -->
-<section class="team-section section-space" id="dentists">
-
-    <div class="container">
-
-        <div class="section-intro reveal-up">
-
-            <div>
-                <span class="section-kicker">05 / Your Dentists</span>
-
-                <h2>
-                    Experts behind
-                    <em>your smile.</em>
-                </h2>
-            </div>
-
-            <p>
-                Experienced clinicians. Thoughtful treatment.
-                One team focused on your long-term oral health.
-            </p>
-
-        </div>
-
-
-        <div class="team-grid">
-
-
-            <article class="doctor-card reveal-up">
-
-                <div class="doctor-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=85"
-                        alt="Dr. Sarah Mitchell">
-
-                    <div class="doctor-overlay">
-                        <div class="doctor-socials">
-                            <a href="#" aria-label="Instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-
-                            <a href="#" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <span class="doctor-number">01</span>
-
-                </div>
-
-                <div class="doctor-info">
-                    <h3>Dr. Sarah Mitchell</h3>
-                    <span>Lead Dentist · 15+ Years</span>
-                </div>
-
-            </article>
-
-
-            <article class="doctor-card reveal-up delay-1">
-
-                <div class="doctor-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=85"
-                        alt="Dr. James Carter">
-
-                    <div class="doctor-overlay">
-                        <div class="doctor-socials">
-                            <a href="#" aria-label="Instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-
-                            <a href="#" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <span class="doctor-number">02</span>
-
-                </div>
-
-                <div class="doctor-info">
-                    <h3>Dr. James Carter</h3>
-                    <span>Cosmetic & Implant Dentist · 10+ Years</span>
-                </div>
-
-            </article>
-
-
-            <article class="doctor-card reveal-up delay-2">
-
-                <div class="doctor-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=900&q=85"
-                        alt="Dr. Emily Wilson">
-
-                    <div class="doctor-overlay">
-                        <div class="doctor-socials">
-                            <a href="#" aria-label="Instagram">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-
-                            <a href="#" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <span class="doctor-number">03</span>
-
-                </div>
-
-                <div class="doctor-info">
-                    <h3>Dr. Emily Wilson</h3>
-                    <span>Orthodontist · 8+ Years</span>
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     RESULTS
-===================================================== -->
-<section class="results-section section-space" id="results">
-
-    <div class="container">
-
-        <div class="results-heading reveal-up">
-
-            <span class="section-kicker">06 / Transformations</span>
-
-            <h2>
-                Real smiles.
-                <em>Real confidence.</em>
-            </h2>
-
-        </div>
-
-
-        <div class="results-grid">
-
-
-            <article class="result-card result-large reveal-up">
-
-                <div class="result-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1200&q=85"
-                        alt="Smile makeover result">
-
-                    <div class="result-label">
-                        <span>Smile Makeover</span>
-                        <i class="fa-solid fa-arrow-up-right"></i>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="result-card reveal-up delay-1">
-
-                <div class="result-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=900&q=85"
-                        alt="Teeth whitening result">
-
-                    <div class="result-label">
-                        <span>Teeth Whitening</span>
-                        <i class="fa-solid fa-arrow-up-right"></i>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <article class="result-card reveal-up delay-2">
-
-                <div class="result-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=900&q=85"
-                        alt="Dental restoration">
-
-                    <div class="result-label">
-                        <span>Dental Restoration</span>
-                        <i class="fa-solid fa-arrow-up-right"></i>
-                    </div>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     TESTIMONIALS
-===================================================== -->
-<section class="stories-section section-space" id="testimonials">
-
-    <div class="container">
-
-        <div class="stories-header reveal-up">
-
-            <span class="section-kicker">07 / Patient Stories</span>
-
-            <div class="stories-heading-row">
-
-                <h2>
-                    What our patients
-                    <em>say.</em>
-                </h2>
-
-                <div class="testimonial-controls">
-
-                    <button class="testimonial-prev"
-                            type="button"
-                            aria-label="Previous testimonial">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-
-                    <button class="testimonial-next"
-                            type="button"
-                            aria-label="Next testimonial">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="testimonial-slider">
-
-            <div class="testimonial-track">
-
-
-                <article class="testimonial-slide">
-
-                    <div class="quote-mark">“</div>
-
-                    <div class="testimonial-content">
-
-                        <div class="testimonial-stars">
-                            ★★★★★
-                        </div>
-
-                        <blockquote>
-                            The entire experience felt completely
-                            different from any dentist I had visited
-                            before. Everyone was warm, professional
-                            and incredibly thoughtful.
-                        </blockquote>
-
-                        <div class="testimonial-person">
-                            <span class="person-avatar">AM</span>
-
-                            <div>
-                                <strong>Anna Morgan</strong>
-                                <span>Smile Makeover Patient</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <span class="testimonial-count">01 / 03</span>
-
+            <div class="services__grid">
+                <article class="service-card reveal" style="--delay:0ms">
+                    <span class="service-card__icon" aria-hidden="true"><i class="fa-solid fa-tooth"></i></span>
+                    <h3 class="service-card__title">General Dentistry</h3>
+                    <p class="service-card__text">
+                        Comprehensive check-ups, professional hygiene and tooth-coloured fillings that keep small
+                        problems from becoming major ones.
+                    </p>
+                    <a class="service-card__link" href="#appointment">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                 </article>
 
-
-                <article class="testimonial-slide">
-
-                    <div class="quote-mark">“</div>
-
-                    <div class="testimonial-content">
-
-                        <div class="testimonial-stars">
-                            ★★★★★
-                        </div>
-
-                        <blockquote>
-                            I was nervous about getting treatment,
-                            but the team explained everything clearly.
-                            I finally feel confident smiling again.
-                        </blockquote>
-
-                        <div class="testimonial-person">
-                            <span class="person-avatar">DL</span>
-
-                            <div>
-                                <strong>Daniel Lee</strong>
-                                <span>Implant Patient</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <span class="testimonial-count">02 / 03</span>
-
+                <article class="service-card reveal" style="--delay:80ms">
+                    <span class="service-card__icon" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                    <h3 class="service-card__title">Cosmetic Dentistry</h3>
+                    <p class="service-card__text">
+                        Porcelain veneers, composite bonding and smile design tailored to your facial features and
+                        natural tooth shade.
+                    </p>
+                    <a class="service-card__link" href="#appointment">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                 </article>
 
-
-                <article class="testimonial-slide">
-
-                    <div class="quote-mark">“</div>
-
-                    <div class="testimonial-content">
-
-                        <div class="testimonial-stars">
-                            ★★★★★
-                        </div>
-
-                        <blockquote>
-                            Beautiful clinic, amazing people and
-                            genuinely excellent care. Every appointment
-                            has been comfortable and easy.
-                        </blockquote>
-
-                        <div class="testimonial-person">
-                            <span class="person-avatar">SR</span>
-
-                            <div>
-                                <strong>Sophia Reynolds</strong>
-                                <span>Orthodontic Patient</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <span class="testimonial-count">03 / 03</span>
-
+                <article class="service-card reveal" style="--delay:160ms">
+                    <span class="service-card__icon" aria-hidden="true"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                    <h3 class="service-card__title">Dental Implants</h3>
+                    <p class="service-card__text">
+                        Titanium implants and custom crowns that replace missing teeth with a stable, natural-looking
+                        result built to last decades.
+                    </p>
+                    <a class="service-card__link" href="#appointment">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
                 </article>
 
+                <article class="service-card reveal" style="--delay:0ms">
+                    <span class="service-card__icon" aria-hidden="true"><i class="fa-solid fa-sun"></i></span>
+                    <h3 class="service-card__title">Teeth Whitening</h3>
+                    <p class="service-card__text">
+                        In-chair whitening for an immediate lift of up to 6 shades, plus custom take-home trays for
+                        long-term maintenance.
+                    </p>
+                    <a class="service-card__link" href="#appointment">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                </article>
+
+                <article class="service-card reveal" style="--delay:80ms">
+                    <span class="service-card__icon" aria-hidden="true"><i class="fa-solid fa-teeth-open"></i></span>
+                    <h3 class="service-card__title">Orthodontics</h3>
+                    <p class="service-card__text">
+                        Clear aligners and modern low-profile braces for adults and teens, with digital progress
+                        tracking at every visit.
+                    </p>
+                    <a class="service-card__link" href="#appointment">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                </article>
+
+                <article class="service-card reveal" style="--delay:160ms">
+                    <span class="service-card__icon" aria-hidden="true"><i class="fa-solid fa-notes-medical"></i></span>
+                    <h3 class="service-card__title">Root Canal Treatment</h3>
+                    <p class="service-card__text">
+                        Microscope-assisted, single-visit endodontics that saves the natural tooth and relieves pain
+                        comfortably.
+                    </p>
+                    <a class="service-card__link" href="#appointment">Learn More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         06. ABOUT CLINIC
+         ============================================================ -->
+    <section class="section" id="about" aria-labelledby="aboutTitle">
+        <div class="container about__grid">
+            <div class="about__media reveal reveal--left">
+                <span class="about__accent-frame" aria-hidden="true"></span>
+                <div class="about__frame">
+                    <img class="about__img"
+                         src="https://images.pexels.com/photos/4269494/pexels-photo-4269494.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1000&w=960"
+                         alt="Dentist and dental nurse caring for a patient inside the Dentéra treatment suite"
+                         width="960" height="1000" loading="lazy" decoding="async">
+                </div>
+                <div class="exp-card">
+                    <i class="fa-solid fa-award" aria-hidden="true"></i>
+                    <span>
+                        <strong>15+</strong>
+                        <span>Years of trusted<br>dental excellence</span>
+                    </span>
+                </div>
             </div>
 
-        </div>
+            <div class="about__content reveal reveal--right">
+                <span class="eyebrow">About Our Clinic</span>
+                <h2 class="section__title" id="aboutTitle">Modern Dentistry. Personal Care.</h2>
+                <p class="lead">
+                    Dentéra is a private clinic in the heart of New York where experienced dentists, modern technology
+                    and a calm environment work together around one idea: you should always feel informed, relaxed and
+                    genuinely cared for.
+                </p>
+                <p>
+                    Every treatment starts with a detailed consultation and digital diagnosis, followed by a personalized
+                    plan that respects your goals, your schedule and your budget. Our team of specialists — from implants
+                    and orthodontics to cosmetic dentistry — collaborates in-house, so your care stays consistent from the
+                    first visit to the final polish.
+                </p>
 
-
-        <div class="testimonial-dots">
-            <button class="testimonial-dot active" type="button"></button>
-            <button class="testimonial-dot" type="button"></button>
-            <button class="testimonial-dot" type="button"></button>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     PROCESS
-===================================================== -->
-<section class="process-section section-space">
-
-    <div class="container">
-
-        <div class="process-heading reveal-up">
-
-            <span class="section-kicker">08 / Your Journey</span>
-
-            <h2>
-                Simple from
-                <em>start to smile.</em>
-            </h2>
-
-        </div>
-
-
-        <div class="process-line">
-
-            <div class="process-progress"></div>
-
-
-            <div class="process-step reveal-up">
-
-                <div class="process-circle">
-                    <span>01</span>
+                <div class="about__mini-grid">
+                    <div class="about__mini">
+                        <i class="fa-solid fa-user-doctor" aria-hidden="true"></i>
+                        <span>
+                            <strong>Specialist Team</strong>
+                            <span>A dedicated dentist for every treatment</span>
+                        </span>
+                    </div>
+                    <div class="about__mini">
+                        <i class="fa-solid fa-microscope" aria-hidden="true"></i>
+                        <span>
+                            <strong>Digital Diagnosis</strong>
+                            <span>3D scans and low-dose digital X-rays</span>
+                        </span>
+                    </div>
                 </div>
 
-                <div>
+                <ul class="check-list">
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Experienced Dental Specialists</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Advanced Diagnostic Technology</li>
+                    <li><i class="fa-solid fa-check" aria-hidden="true"></i> Comfortable Patient Experience</li>
+                </ul>
+
+                <a class="btn btn-primary" href="#dentists">
+                    Meet Our Team
+                    <i class="fa-solid fa-arrow-right arrow" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         07. WHY CHOOSE US
+         ============================================================ -->
+    <section class="section section--dark" id="why" aria-labelledby="whyTitle">
+        <div class="container">
+            <div class="section__head section__head--center reveal">
+                <span class="eyebrow eyebrow--light eyebrow--center">Why Dentéra</span>
+                <h2 class="section__title section__title--light" id="whyTitle">Why Patients Choose DENTÉRA</h2>
+                <p class="section__desc">
+                    Premium dentistry is more than equipment — it is the calm confidence that comes from being treated
+                    by people who explain everything and rush nothing.
+                </p>
+            </div>
+
+            <div class="why__grid">
+                <article class="why-card reveal" style="--delay:0ms">
+                    <span class="why-card__icon" aria-hidden="true"><i class="fa-solid fa-user-doctor"></i></span>
+                    <h3>Experienced Specialists</h3>
+                    <p>Implantologists, orthodontists and cosmetic dentists with 8–15+ years of focused clinical experience.</p>
+                </article>
+                <article class="why-card reveal" style="--delay:80ms">
+                    <span class="why-card__icon" aria-hidden="true"><i class="fa-solid fa-microscope"></i></span>
+                    <h3>Advanced Technology</h3>
+                    <p>Intraoral 3D scanning, digital X-rays and CAD/CAM planning for more precise, predictable results.</p>
+                </article>
+                <article class="why-card reveal" style="--delay:160ms">
+                    <span class="why-card__icon" aria-hidden="true"><i class="fa-solid fa-hand-holding-heart"></i></span>
+                    <h3>Gentle &amp; Comfortable Care</h3>
+                    <p>Painless anaesthesia, noise-reduced instruments and unhurried appointments designed for anxious patients.</p>
+                </article>
+                <article class="why-card reveal" style="--delay:240ms">
+                    <span class="why-card__icon" aria-hidden="true"><i class="fa-solid fa-file-invoice-dollar"></i></span>
+                    <h3>Transparent Treatment Plans</h3>
+                    <p>Clear written plans, itemised costs and flexible payment options — approved by you before we begin.</p>
+                </article>
+            </div>
+
+            <div class="why__strip reveal">
+                <p>
+                    Not sure what you need?
+                    <small>Book a complimentary consultation and we will build a transparent plan around your smile goals.</small>
+                </p>
+                <a class="btn btn-accent" href="#appointment">
+                    <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                    Free Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         08. TECHNOLOGY (fixed background)
+         ============================================================ -->
+    <section class="tech" id="technology" aria-labelledby="techTitle">
+        <div class="container tech__grid">
+            <div class="tech__media reveal reveal--left">
+                <span class="tech__chip"><i class="fa-solid fa-radiation" aria-hidden="true"></i> 90% lower radiation dose</span>
+                <img class="tech__main-img"
+                     src="https://images.pexels.com/photos/6501868/pexels-photo-6501868.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=860&w=1100"
+                     alt="Digital panoramic X-ray unit in the Dentéra diagnostics room"
+                     width="1100" height="860" loading="lazy" decoding="async">
+                <figure class="tech__small">
+                    <img src="https://images.pexels.com/photos/6627668/pexels-photo-6627668.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=520&w=760"
+                         alt="Sterile modern dental instruments prepared for a treatment"
+                         width="760" height="520" loading="lazy" decoding="async">
+                </figure>
+            </div>
+
+            <div class="tech__content reveal reveal--right">
+                <span class="eyebrow eyebrow--light">Our Technology</span>
+                <h2 class="section__title" id="techTitle">Technology That Makes Dentistry Better</h2>
+                <p class="lead">
+                    Better tools mean fewer surprises. Digital workflows let us diagnose earlier, plan more precisely and
+                    treat more conservatively — so you spend less time in the chair and more time enjoying the result.
+                </p>
+
+                <div class="tech__list">
+                    <div class="tech__item">
+                        <i class="fa-solid fa-x-ray" aria-hidden="true"></i>
+                        <span>
+                            <strong>Digital X-rays</strong>
+                            <span>Instant, low-dose imaging with no chemical processing.</span>
+                        </span>
+                    </div>
+                    <div class="tech__item">
+                        <i class="fa-solid fa-cube" aria-hidden="true"></i>
+                        <span>
+                            <strong>3D Dental Scanning</strong>
+                            <span>Needle-free digital impressions in under three minutes.</span>
+                        </span>
+                    </div>
+                    <div class="tech__item">
+                        <i class="fa-solid fa-laptop-medical" aria-hidden="true"></i>
+                        <span>
+                            <strong>Digital Treatment Planning</strong>
+                            <span>See a preview of your result before treatment begins.</span>
+                        </span>
+                    </div>
+                    <div class="tech__item">
+                        <i class="fa-solid fa-toolbox" aria-hidden="true"></i>
+                        <span>
+                            <strong>Modern Equipment</strong>
+                            <span>Magnification, LED curing and same-day ceramic restorations.</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="tech__highlight">
+                    <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                    <p>“Less discomfort. Faster diagnosis. Better results.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         09. DENTAL TEAM
+         ============================================================ -->
+    <section class="section" id="dentists" aria-labelledby="teamTitle">
+        <div class="container">
+            <div class="section__head section__head--center reveal">
+                <span class="eyebrow eyebrow--center">Our Dentists</span>
+                <h2 class="section__title" id="teamTitle">Meet Your Dental Care Team</h2>
+                <p class="section__desc">
+                    A small, senior team — the same familiar faces at every appointment, supported by trained dental
+                    nurses and hygienists.
+                </p>
+            </div>
+
+            <div class="team__grid">
+                <article class="doctor-card reveal" style="--delay:0ms">
+                    <div class="doctor-card__media">
+                        <span class="doctor-card__exp">15+ Years Experience</span>
+                        <img class="doctor-card__img"
+                             src="https://images.pexels.com/photos/5355860/pexels-photo-5355860.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1000&w=800"
+                             alt="Dr. Sarah Mitchell, lead dentist at Dentéra, smiling in her clinic"
+                             width="800" height="1000" loading="lazy" decoding="async">
+                        <div class="doctor-card__socials">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="Dr. Sarah Mitchell on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="mailto:hello@denteraclinic.com" aria-label="Email Dr. Sarah Mitchell"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-card__body">
+                        <h3 class="doctor-card__name">Dr. Sarah Mitchell</h3>
+                        <span class="doctor-card__role">Lead Dentist</span>
+                        <span class="doctor-card__exp-text">DDS, General &amp; Restorative Dentistry</span>
+                    </div>
+                </article>
+
+                <article class="doctor-card reveal" style="--delay:90ms">
+                    <div class="doctor-card__media">
+                        <span class="doctor-card__exp">10+ Years Experience</span>
+                        <img class="doctor-card__img"
+                             src="https://images.pexels.com/photos/37458046/pexels-photo-37458046.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1000&w=800"
+                             alt="Dr. James Carter, cosmetic and implant dentist at Dentéra"
+                             width="800" height="1000" loading="lazy" decoding="async">
+                        <div class="doctor-card__socials">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="Dr. James Carter on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="mailto:hello@denteraclinic.com" aria-label="Email Dr. James Carter"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-card__body">
+                        <h3 class="doctor-card__name">Dr. James Carter</h3>
+                        <span class="doctor-card__role">Cosmetic &amp; Implant Dentist</span>
+                        <span class="doctor-card__exp-text">DMD, Implantology &amp; Smile Design</span>
+                    </div>
+                </article>
+
+                <article class="doctor-card reveal" style="--delay:180ms">
+                    <div class="doctor-card__media">
+                        <span class="doctor-card__exp">8+ Years Experience</span>
+                        <img class="doctor-card__img"
+                             src="https://images.pexels.com/photos/31043312/pexels-photo-31043312.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1000&w=800"
+                             alt="Dr. Emily Wilson, orthodontist at Dentéra, standing in a modern clinic"
+                             width="800" height="1000" loading="lazy" decoding="async">
+                        <div class="doctor-card__socials">
+                            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="Dr. Emily Wilson on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                            <a href="mailto:hello@denteraclinic.com" aria-label="Email Dr. Emily Wilson"><i class="fa-regular fa-envelope" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="doctor-card__body">
+                        <h3 class="doctor-card__name">Dr. Emily Wilson</h3>
+                        <span class="doctor-card__role">Orthodontist</span>
+                        <span class="doctor-card__exp-text">DDS, MS Orthodontics &amp; Aligners</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="team__note reveal">
+                <p>Every dentist at Dentéra completes 40+ hours of advanced training each year.</p>
+                <a class="btn btn-outline btn-sm" href="#appointment">Book with a specialist</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         10. BEFORE & AFTER
+         ============================================================ -->
+    <section class="section section--alt" id="results" aria-labelledby="resultsTitle">
+        <div class="container">
+            <div class="section__head section__head--center reveal">
+                <span class="eyebrow eyebrow--center">Patient Results</span>
+                <h2 class="section__title" id="resultsTitle">Real Results. Confident Smiles.</h2>
+                <p class="section__desc">
+                    Drag the slider on each case to reveal the transformation. All results shown are from completed
+                    treatments at Dentéra, photographed with patient consent.
+                </p>
+            </div>
+
+            <div class="ba__grid">
+                <article class="ba-card reveal" style="--delay:0ms">
+                    <div class="compare">
+                        <div class="compare__after">
+                            <img class="compare__img"
+                                 src="https://images.pexels.com/photos/3762453/pexels-photo-3762453.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=760&w=950"
+                                 alt="Patient's smile after a complete veneer smile makeover"
+                                 width="950" height="760" loading="lazy" decoding="async">
+                        </div>
+                        <div class="compare__before" aria-hidden="true">
+                            <img class="compare__img"
+                                 src="https://images.pexels.com/photos/3762453/pexels-photo-3762453.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=760&w=950"
+                                 alt=""
+                                 width="950" height="760" loading="lazy" decoding="async">
+                        </div>
+                        <span class="compare__handle" aria-hidden="true">
+                            <span class="compare__knob"><i class="fa-solid fa-left-right" aria-hidden="true"></i></span>
+                        </span>
+                        <span class="compare__tag compare__tag--before">Before</span>
+                        <span class="compare__tag compare__tag--after">After</span>
+                        <input class="compare__input" type="range" min="0" max="100" value="52" step="1"
+                               aria-label="Reveal the before and after comparison for the smile makeover case">
+                    </div>
+                    <div class="ba-card__meta">
+                        <h3>Smile Makeover</h3>
+                        <p>Chipped and worn front teeth rebuilt with six hand-layered porcelain veneers over two visits.</p>
+                        <div class="ba-card__tags">
+                            <span class="chip"><i class="fa-solid fa-clock" aria-hidden="true"></i> 2 visits</span>
+                            <span class="chip"><i class="fa-solid fa-tooth" aria-hidden="true"></i> Veneers</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="ba-card reveal" style="--delay:90ms">
+                    <div class="compare">
+                        <div class="compare__after">
+                            <img class="compare__img"
+                                 src="https://images.pexels.com/photos/3762402/pexels-photo-3762402.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=760&w=950"
+                                 alt="Bright, whitened smile after in-chair professional teeth whitening"
+                                 width="950" height="760" loading="lazy" decoding="async">
+                        </div>
+                        <div class="compare__before" aria-hidden="true">
+                            <img class="compare__img"
+                                 src="https://images.pexels.com/photos/3762402/pexels-photo-3762402.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=760&w=950"
+                                 alt=""
+                                 width="950" height="760" loading="lazy" decoding="async">
+                        </div>
+                        <span class="compare__handle" aria-hidden="true">
+                            <span class="compare__knob"><i class="fa-solid fa-left-right" aria-hidden="true"></i></span>
+                        </span>
+                        <span class="compare__tag compare__tag--before">Before</span>
+                        <span class="compare__tag compare__tag--after">After</span>
+                        <input class="compare__input" type="range" min="0" max="100" value="50" step="1"
+                               aria-label="Reveal the before and after comparison for the teeth whitening case">
+                    </div>
+                    <div class="ba-card__meta">
+                        <h3>Teeth Whitening</h3>
+                        <p>Professional cleaning followed by in-chair whitening — six shades brighter in a single 60-minute appointment.</p>
+                        <div class="ba-card__tags">
+                            <span class="chip"><i class="fa-solid fa-clock" aria-hidden="true"></i> 60 minutes</span>
+                            <span class="chip"><i class="fa-solid fa-sun" aria-hidden="true"></i> Whitening</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="ba-card reveal" style="--delay:180ms">
+                    <div class="compare">
+                        <div class="compare__after">
+                            <img class="compare__img"
+                                 src="https://images.pexels.com/photos/3762400/pexels-photo-3762400.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=760&w=950"
+                                 alt="Restored natural teeth after root canal therapy and a ceramic crown"
+                                 width="950" height="760" loading="lazy" decoding="async">
+                        </div>
+                        <div class="compare__before" aria-hidden="true">
+                            <img class="compare__img"
+                                 src="https://images.pexels.com/photos/3762400/pexels-photo-3762400.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=760&w=950"
+                                 alt=""
+                                 width="950" height="760" loading="lazy" decoding="async">
+                        </div>
+                        <span class="compare__handle" aria-hidden="true">
+                            <span class="compare__knob"><i class="fa-solid fa-left-right" aria-hidden="true"></i></span>
+                        </span>
+                        <span class="compare__tag compare__tag--before">Before</span>
+                        <span class="compare__tag compare__tag--after">After</span>
+                        <input class="compare__input" type="range" min="0" max="100" value="54" step="1"
+                               aria-label="Reveal the before and after comparison for the dental restoration case">
+                    </div>
+                    <div class="ba-card__meta">
+                        <h3>Dental Restoration</h3>
+                        <p>A heavily worn molar saved with microscope-assisted root canal therapy and a custom ceramic onlay.</p>
+                        <div class="ba-card__tags">
+                            <span class="chip"><i class="fa-solid fa-clock" aria-hidden="true"></i> Single visit</span>
+                            <span class="chip"><i class="fa-solid fa-notes-medical" aria-hidden="true"></i> Endodontics</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <p class="ba__hint">
+                <i class="fa-solid fa-hand-pointer" aria-hidden="true"></i>
+                Drag or use your arrow keys on the slider to compare each result.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         11. TESTIMONIALS
+         ============================================================ -->
+    <section class="section" id="testimonials" aria-labelledby="testiTitle">
+        <div class="container">
+            <div class="section__head section__head--center reveal">
+                <span class="eyebrow eyebrow--center">Patient Stories</span>
+                <h2 class="section__title" id="testiTitle">What Our Patients Say</h2>
+                <p class="section__desc">
+                    Genuine feedback from patients who came in nervous — and left smiling.
+                </p>
+            </div>
+
+            <div class="testi__wrap reveal">
+                <div class="testi__carousel" tabindex="0" role="group" aria-roledescription="carousel" aria-label="Patient testimonials">
+                    <div class="testi__viewport">
+                        <div class="testi__track">
+                            <div class="testi__slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
+                                <article class="testi-card">
+                                    <span class="stars testi-card__stars" aria-label="5 out of 5 stars">
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    </span>
+                                    <blockquote>
+                                        “I was nervous before my treatment, but the entire team made me feel comfortable
+                                        from the moment I arrived. Dr. Mitchell explained every step and my implant
+                                        feels completely natural.”
+                                    </blockquote>
+                                    <div class="testi-card__person">
+                                        <span class="avatar" aria-hidden="true">OM</span>
+                                        <span class="testi-card__meta">
+                                            <strong>Olivia Martin</strong>
+                                            <span>Dental Implant Patient</span>
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="testi__slide" role="group" aria-roledescription="slide" aria-label="2 of 3" aria-hidden="true">
+                                <article class="testi-card">
+                                    <span class="stars testi-card__stars" aria-label="5 out of 5 stars">
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    </span>
+                                    <blockquote>
+                                        “The clinic is spotless and the technology is impressive — the 3D scan showed me
+                                        my new smile before we even started. My whitening results lasted far longer than
+                                        I expected.”
+                                    </blockquote>
+                                    <div class="testi-card__person">
+                                        <span class="avatar" aria-hidden="true">JC</span>
+                                        <span class="testi-card__meta">
+                                            <strong>Jason Cooper</strong>
+                                            <span>Cosmetic Dentistry Patient</span>
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+
+                            <div class="testi__slide" role="group" aria-roledescription="slide" aria-label="3 of 3" aria-hidden="true">
+                                <article class="testi-card">
+                                    <span class="stars testi-card__stars" aria-label="5 out of 5 stars">
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                                    </span>
+                                    <blockquote>
+                                        “My daughter's aligner treatment was smooth from start to finish. Appointments ran
+                                        on time, the plan was transparent, and Dr. Wilson always took the time to answer
+                                        our questions.”
+                                    </blockquote>
+                                    <div class="testi-card__person">
+                                        <span class="avatar" aria-hidden="true">DL</span>
+                                        <span class="testi-card__meta">
+                                            <strong>Daniel Lewis</strong>
+                                            <span>Orthodontics Patient's Parent</span>
+                                        </span>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testi__nav">
+                        <button class="testi__btn testi__btn--prev" type="button" aria-label="Previous testimonial">
+                            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+                        </button>
+
+                        <div class="testi__dots" role="tablist" aria-label="Choose testimonial">
+                            <button class="testi-dot is-active" type="button" role="tab" aria-selected="true" aria-label="Testimonial 1"></button>
+                            <button class="testi-dot" type="button" role="tab" aria-selected="false" aria-label="Testimonial 2"></button>
+                            <button class="testi-dot" type="button" role="tab" aria-selected="false" aria-label="Testimonial 3"></button>
+                        </div>
+
+                        <button class="testi__btn testi__btn--next" type="button" aria-label="Next testimonial">
+                            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         12. TREATMENT PROCESS
+         ============================================================ -->
+    <section class="section section--alt" id="process" aria-labelledby="processTitle">
+        <div class="container">
+            <div class="section__head section__head--center reveal">
+                <span class="eyebrow eyebrow--center">How It Works</span>
+                <h2 class="section__title" id="processTitle">Your Visit, Made Simple</h2>
+                <p class="section__desc">
+                    Four clear steps from your first phone call to the smile you have been planning.
+                </p>
+            </div>
+
+            <div class="process__grid">
+                <article class="step reveal" style="--delay:0ms">
+                    <span class="step__num">01</span>
                     <h3>Book Your Visit</h3>
-                    <p>
-                        Choose a convenient time
-                        for your consultation.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="process-step reveal-up delay-1">
-
-                <div class="process-circle">
-                    <span>02</span>
-                </div>
-
-                <div>
+                    <p>Call or use the online form. Our reception team confirms a time that fits your schedule — usually within 24 hours.</p>
+                </article>
+                <article class="step reveal" style="--delay:90ms">
+                    <span class="step__num">02</span>
                     <h3>Meet Your Dentist</h3>
-                    <p>
-                        Talk through your concerns,
-                        goals and expectations.
-                    </p>
-                </div>
-
+                    <p>A relaxed consultation with digital X-rays, an oral health check and an honest conversation about your goals.</p>
+                </article>
+                <article class="step reveal" style="--delay:180ms">
+                    <span class="step__num">03</span>
+                    <h3>Get Your Treatment Plan</h3>
+                    <p>You receive a written plan with options, timelines and itemised costs. Nothing starts until you are happy.</p>
+                </article>
+                <article class="step reveal" style="--delay:270ms">
+                    <span class="step__num">04</span>
+                    <h3>Start Your Smile Journey</h3>
+                    <p>Comfortable treatment, clear aftercare guidance and regular check-ups to keep your smile healthy for life.</p>
+                </article>
             </div>
-
-
-            <div class="process-step reveal-up delay-2">
-
-                <div class="process-circle">
-                    <span>03</span>
-                </div>
-
-                <div>
-                    <h3>Get Your Plan</h3>
-                    <p>
-                        Receive a clear,
-                        personalized treatment plan.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="process-step reveal-up delay-3">
-
-                <div class="process-circle">
-                    <span>04</span>
-                </div>
-
-                <div>
-                    <h3>Start Your Journey</h3>
-                    <p>
-                        Move forward with
-                        confident, comfortable care.
-                    </p>
-                </div>
-
-            </div>
-
         </div>
+    </section>
 
-    </div>
+    <!-- ============================================================
+         13. APPOINTMENT CTA (fixed background)
+         ============================================================ -->
+    <section class="cta-band" id="appointment" aria-labelledby="ctaTitle">
+        <div class="container cta-band__inner reveal">
+            <span class="eyebrow eyebrow--light eyebrow--center">Appointments Open</span>
+            <h2 id="ctaTitle">Ready to Love Your Smile?</h2>
+            <p>Schedule your consultation with our dental team today.</p>
 
-</section>
-
-
-<!-- =====================================================
-     CTA
-===================================================== -->
-<section class="cta-section">
-
-    <div class="cta-orb cta-orb-one"></div>
-    <div class="cta-orb cta-orb-two"></div>
-
-    <div class="container">
-
-        <div class="cta-inner reveal-up">
-
-            <span class="section-kicker light-kicker">
-                Your next chapter
-            </span>
-
-            <h2>
-                Ready to love
-                <br>
-                <em>your smile?</em>
-            </h2>
-
-            <p>
-                Schedule your consultation with our dental
-                team and take the first step toward a healthier,
-                more confident smile.
-            </p>
-
-
-            <div class="cta-actions">
-
-                <a href="#contact" class="magnetic-btn magnetic-btn-light">
-                    <span>Book an Appointment</span>
-                    <i class="fa-solid fa-arrow-up-right"></i>
+            <div class="cta-band__actions">
+                <a class="btn btn-light" href="#contact">
+                    <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+                    Book an Appointment
                 </a>
-
-                <a href="tel:+15551234567" class="cta-call">
-                    <span>Prefer to call?</span>
-                    <strong>+1 (555) 123-4567</strong>
+                <a class="btn btn-glass" href="tel:+15551234567">
+                    <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                    Call +1 (555) 123-4567
                 </a>
-
             </div>
 
+            <div class="cta-band__badges">
+                <span><i class="fa-solid fa-check" aria-hidden="true"></i> Complimentary first consultation</span>
+                <span><i class="fa-solid fa-check" aria-hidden="true"></i> Same-week emergency slots</span>
+                <span><i class="fa-solid fa-check" aria-hidden="true"></i> Flexible payment plans</span>
+            </div>
         </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     FAQ
-===================================================== -->
-<section class="faq-section section-space" id="faq">
-
-    <div class="container faq-grid">
-
-        <div class="faq-heading reveal-left">
-
-            <span class="section-kicker">09 / Questions</span>
-
-            <h2>
-                Everything you
-                <em>need to know.</em>
-            </h2>
-
-            <p>
-                Still have a question?
-                Our team is always happy to help.
-            </p>
-
-            <a href="#contact" class="outline-btn">
-                Ask Our Team
-                <i class="fa-solid fa-arrow-up-right"></i>
-            </a>
-
-        </div>
-
-
-        <div class="faq-list reveal-right">
-
-
-            <div class="faq-item active">
-
-                <button class="faq-question" type="button">
-
-                    <span>Are you accepting new patients?</span>
-
-                    <span class="faq-icon">
-                        <i class="fa-solid fa-plus"></i>
-                    </span>
-
-                </button>
-
-                <div class="faq-answer">
-                    <div>
-                        Yes. We welcome new patients and offer
-                        a complimentary initial consultation to
-                        understand your needs and goals.
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="faq-item">
-
-                <button class="faq-question" type="button">
-
-                    <span>What should I expect during my first visit?</span>
-
-                    <span class="faq-icon">
-                        <i class="fa-solid fa-plus"></i>
-                    </span>
-
-                </button>
-
-                <div class="faq-answer">
-                    <div>
-                        Your first appointment is focused on
-                        understanding your dental history,
-                        concerns and goals. Your dentist will
-                        discuss your options and recommend
-                        the next steps.
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="faq-item">
-
-                <button class="faq-question" type="button">
-
-                    <span>Do you offer cosmetic dentistry?</span>
-
-                    <span class="faq-icon">
-                        <i class="fa-solid fa-plus"></i>
-                    </span>
-
-                </button>
-
-                <div class="faq-answer">
-                    <div>
-                        Yes. Our cosmetic treatments include
-                        professional whitening, smile makeovers,
-                        restorations and other aesthetic treatments.
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="faq-item">
-
-                <button class="faq-question" type="button">
-
-                    <span>How do I know which treatment is right for me?</span>
-
-                    <span class="faq-icon">
-                        <i class="fa-solid fa-plus"></i>
-                    </span>
-
-                </button>
-
-                <div class="faq-answer">
-                    <div>
-                        Your dentist will evaluate your oral health,
-                        listen to your goals and explain the treatment
-                        options that best fit your situation.
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="faq-item">
-
-                <button class="faq-question" type="button">
-
-                    <span>Do you accept dental insurance?</span>
-
-                    <span class="faq-icon">
-                        <i class="fa-solid fa-plus"></i>
-                    </span>
-
-                </button>
-
-                <div class="faq-answer">
-                    <div>
-                        We work with many common dental insurance
-                        plans. Our team can help you understand
-                        your available coverage before treatment.
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="faq-item">
-
-                <button class="faq-question" type="button">
-
-                    <span>How can I schedule an appointment?</span>
-
-                    <span class="faq-icon">
-                        <i class="fa-solid fa-plus"></i>
-                    </span>
-
-                </button>
-
-                <div class="faq-answer">
-                    <div>
-                        You can use the appointment form below
-                        or call our team directly at
-                        +1 (555) 123-4567.
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     CONTACT
-===================================================== -->
-<section class="contact-section section-space" id="contact">
-
-    <div class="container contact-grid">
-
-
-        <div class="contact-info reveal-left">
-
-            <span class="section-kicker">10 / Contact</span>
-
-            <h2>
-                Let's start
-                <em>your smile journey.</em>
-            </h2>
-
-            <p>
-                Tell us a little about what you're looking for
-                and our team will get back to you.
-            </p>
-
-
-            <div class="contact-details">
-
-                <a href="https://maps.google.com/?q=123+Smile+Avenue+New+York"
-                   target="_blank"
-                   rel="noopener">
-                    <span class="contact-icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </span>
-
-                    <span>
-                        <small>Visit us</small>
-                        123 Smile Avenue<br>
-                        New York, NY 10001
-                    </span>
-                </a>
-
-
-                <a href="tel:+15551234567">
-
-                    <span class="contact-icon">
-                        <i class="fa-solid fa-phone"></i>
-                    </span>
-
-                    <span>
-                        <small>Call us</small>
-                        +1 (555) 123-4567
-                    </span>
-
-                </a>
-
-
-                <a href="mailto:hello@denteraclinic.com">
-
-                    <span class="contact-icon">
-                        <i class="fa-regular fa-envelope"></i>
-                    </span>
-
-                    <span>
-                        <small>Email</small>
-                        hello@denteraclinic.com
-                    </span>
-
-                </a>
-
-
-                <div class="contact-hours">
-
-                    <span class="contact-icon">
-                        <i class="fa-regular fa-clock"></i>
-                    </span>
-
-                    <span>
-                        <small>Opening hours</small>
-                        Mon–Fri · 8:00 AM–6:00 PM
-                        <br>
-                        Sat · 9:00 AM–2:00 PM
-                    </span>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <div class="appointment-form-wrap reveal-right">
-
-            <div class="form-top">
-
-                <span>Appointment Request</span>
-
-                <div>
-                    <i class="fa-solid fa-arrow-up-right"></i>
-                </div>
-
-            </div>
-
-
-            <form id="appointmentForm" class="appointment-form">
-
-                <div class="form-row">
-
-                    <div class="form-field">
-                        <label for="fullName">Full Name</label>
-                        <input
-                            type="text"
-                            id="fullName"
-                            name="fullName"
-                            placeholder="Your name"
-                            required>
-                    </div>
-
-                    <div class="form-field">
-                        <label for="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="you@example.com"
-                            required>
-                    </div>
-
-                </div>
-
-
-                <div class="form-row">
-
-                    <div class="form-field">
-                        <label for="phone">Phone</label>
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            placeholder="+1 (555) 000-0000"
-                            required>
-                    </div>
-
-                    <div class="form-field">
-                        <label for="date">Preferred Date</label>
-                        <input
-                            type="date"
-                            id="date"
-                            name="date"
-                            required>
-                    </div>
-
-                </div>
-
-
-                <div class="form-field">
-
-                    <label for="service">Service</label>
-
-                    <select id="service" name="service" required>
-
-                        <option value="" selected disabled>
-                            Select a treatment
-                        </option>
-
-                        <option value="general">
-                            General Dentistry
-                        </option>
-
-                        <option value="cosmetic">
-                            Cosmetic Dentistry
-                        </option>
-
-                        <option value="implants">
-                            Dental Implants
-                        </option>
-
-                        <option value="whitening">
-                            Teeth Whitening
-                        </option>
-
-                        <option value="orthodontics">
-                            Orthodontics
-                        </option>
-
-                        <option value="root-canal">
-                            Root Canal Treatment
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="form-field">
-
-                    <label for="message">Message</label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="4"
-                        placeholder="Tell us how we can help..."></textarea>
-
-                </div>
-
-
-                <button type="submit" class="form-submit magnetic-btn">
-
-                    <span>Request Appointment</span>
-
-                    <i class="fa-solid fa-arrow-up-right"></i>
-
-                </button>
-
-
-                <p class="form-note">
-                    <i class="fa-solid fa-lock"></i>
-                    Your information is kept private and secure.
+    </section>
+
+    <!-- ============================================================
+         14. FAQ
+         ============================================================ -->
+    <section class="section" id="faq" aria-labelledby="faqTitle">
+        <div class="container faq__grid">
+            <div class="faq__intro reveal">
+                <span class="eyebrow">Questions &amp; Answers</span>
+                <h2 class="section__title" id="faqTitle">Frequently Asked Questions</h2>
+                <p class="section__desc">
+                    Everything new patients usually ask before their first visit. If your question is not here, our
+                    reception team is happy to help.
                 </p>
 
-            </form>
+                <div class="faq__support">
+                    <strong>Still have a question?</strong>
+                    <p>Speak with a Dentéra team member — no call-centre scripts, just straight answers.</p>
+                    <a class="btn btn-light btn-sm" href="tel:+15551234567">
+                        <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                        +1 (555) 123-4567
+                    </a>
+                </div>
+            </div>
 
+            <div class="faq__list reveal reveal--right">
+                <article class="faq-item">
+                    <h3>
+                        <button class="faq-item__q" type="button" aria-expanded="false" aria-controls="faq-panel-1" id="faq-q-1">
+                            How often should I visit the dentist?
+                            <span class="faq-item__icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                    </h3>
+                    <div class="faq-item__a" id="faq-panel-1" role="region" aria-labelledby="faq-q-1">
+                        <div class="faq-item__a-inner">
+                            For most adults a check-up and professional hygiene appointment every six months keeps the gums
+                            and enamel in good health. Patients with gum disease, implants, braces or a high risk of decay
+                            are often reviewed every three to four months we will agree the right interval for you at your
+                            first visit.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <h3>
+                        <button class="faq-item__q" type="button" aria-expanded="false" aria-controls="faq-panel-2" id="faq-q-2">
+                            Do you accept new patients?
+                            <span class="faq-item__icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                    </h3>
+                    <div class="faq-item__a" id="faq-panel-2" role="region" aria-labelledby="faq-q-2">
+                        <div class="faq-item__a-inner">
+                            Yes — Dentéra welcomes new patients of all ages, including families. New patients receive a
+                            complimentary initial consultation with a full oral health assessment, digital X-rays where
+                            needed, and a written treatment plan with transparent pricing before anything begins.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <h3>
+                        <button class="faq-item__q" type="button" aria-expanded="false" aria-controls="faq-panel-3" id="faq-q-3">
+                            How long does a consultation take?
+                            <span class="faq-item__icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                    </h3>
+                    <div class="faq-item__a" id="faq-panel-3" role="region" aria-labelledby="faq-q-3">
+                        <div class="faq-item__a-inner">
+                            A first consultation usually takes 40 to 45 minutes. That includes a conversation about your
+                            goals, a clinical examination, digital imaging and time to discuss your options. Follow-up
+                            review appointments are typically 20 to 30 minutes.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <h3>
+                        <button class="faq-item__q" type="button" aria-expanded="false" aria-controls="faq-panel-4" id="faq-q-4">
+                            Do you offer cosmetic dentistry?
+                            <span class="faq-item__icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                    </h3>
+                    <div class="faq-item__a" id="faq-panel-4" role="region" aria-labelledby="faq-q-4">
+                        <div class="faq-item__a-inner">
+                            Absolutely. We offer porcelain veneers, composite bonding, professional whitening, gum
+                            contouring and complete smile makeovers. Every cosmetic case starts with a digital design so
+                            you can see a preview of your result, and we always prioritise conservative treatment that
+                            protects your natural teeth.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <h3>
+                        <button class="faq-item__q" type="button" aria-expanded="false" aria-controls="faq-panel-5" id="faq-q-5">
+                            Are dental implants painful?
+                            <span class="faq-item__icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                    </h3>
+                    <div class="faq-item__a" id="faq-panel-5" role="region" aria-labelledby="faq-q-5">
+                        <div class="faq-item__a-inner">
+                            Implant placement is carried out under local anaesthetic, so you should not feel pain during
+                            the procedure — most patients describe it as easier than a tooth extraction. We use targeted,
+                            gentle anaesthesia and offer sedation options for anxious patients. Mild tenderness for a few
+                            days afterwards is normal and managed with standard pain relief.
+                        </div>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <h3>
+                        <button class="faq-item__q" type="button" aria-expanded="false" aria-controls="faq-panel-6" id="faq-q-6">
+                            Do you offer emergency appointments?
+                            <span class="faq-item__icon" aria-hidden="true"><i class="fa-solid fa-plus"></i></span>
+                        </button>
+                    </h3>
+                    <div class="faq-item__a" id="faq-panel-6" role="region" aria-labelledby="faq-q-6">
+                        <div class="faq-item__a-inner">
+                            Yes. We reserve same-day slots for urgent problems such as severe toothache, a broken tooth,
+                            a lost crown or dental trauma. Call <a href="tel:+15551234567">+1 (555) 123-4567</a> as early
+                            in the day as you can and our reception team will do their best to see you the same day.
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
+    </section>
 
-    </div>
+    <!-- ============================================================
+         15. CONTACT + APPOINTMENT FORM
+         ============================================================ -->
+    <section class="section section--alt" id="contact" aria-labelledby="contactTitle">
+        <div class="container contact__grid">
+            <div class="contact__intro reveal reveal--left">
+                <span class="eyebrow">Visit Us</span>
+                <h2 class="section__title" id="contactTitle">Let’s Take Care of Your Smile</h2>
+                <p class="contact__desc lead">
+                    Our clinic is a short walk from Midtown Manhattan and easily reached by subway. Complete the form and
+                    our reception team will confirm your appointment within one working day.
+                </p>
 
-</section>
+                <ul class="info-list">
+                    <li class="info-row">
+                        <span class="info-row__icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+                        <div>
+                            <strong>Clinic Address</strong>
+                            <p>123 Smile Avenue<br>New York, NY 10001</p>
+                        </div>
+                    </li>
+                    <li class="info-row">
+                        <span class="info-row__icon" aria-hidden="true"><i class="fa-solid fa-phone-volume"></i></span>
+                        <div>
+                            <strong>Phone</strong>
+                            <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                        </div>
+                    </li>
+                    <li class="info-row">
+                        <span class="info-row__icon" aria-hidden="true"><i class="fa-regular fa-envelope"></i></span>
+                        <div>
+                            <strong>Email</strong>
+                            <p><a href="mailto:hello@denteraclinic.com">hello@denteraclinic.com</a></p>
+                        </div>
+                    </li>
+                    <li class="info-row">
+                        <span class="info-row__icon" aria-hidden="true"><i class="fa-regular fa-clock"></i></span>
+                        <div>
+                            <strong>Opening Hours</strong>
+                            <ul class="hours">
+                                <li><span>Mon – Fri</span><span>9:00 AM – 6:00 PM</span></li>
+                                <li><span>Saturday</span><span>9:00 AM – 2:00 PM</span></li>
+                                <li class="is-closed"><span>Sunday</span><span>Closed</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form-card reveal reveal--right">
+                <div class="form-card__head">
+                    <h3>Request an Appointment</h3>
+                    <p>Tell us a little about your visit and we will confirm by phone or email.</p>
+                </div>
+
+                <div class="form-success" id="formSuccess" aria-live="polite">
+                    <span class="form-success__icon" aria-hidden="true"><i class="fa-solid fa-check"></i></span>
+                    <div>
+                        <strong>Thank you<span id="successName"></span>! Your appointment request has been received.</strong>
+                        <p>Our reception team will contact you within one working day to confirm your preferred time.</p>
+                    </div>
+                </div>
+
+                <form id="appointmentForm" novalidate>
+                    <div class="form-grid">
+                        <div class="field">
+                            <label for="fullName">Full Name <span class="req" aria-hidden="true">*</span></label>
+                            <input type="text" id="fullName" name="fullName" placeholder="e.g. Olivia Martin" autocomplete="name" required>
+                            <span class="field__error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Email Address <span class="req" aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                            <span class="field__error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel" required>
+                            <span class="field__error" role="alert"></span>
+                        </div>
+
+                        <div class="field">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+
+                        <div class="field field--full">
+                            <label for="service">Preferred Service</label>
+                            <select id="service" name="service">
+                                <option value="">Select a treatment</option>
+                                <option>General Dentistry &amp; Check-up</option>
+                                <option>Cosmetic Dentistry</option>
+                                <option>Dental Implants</option>
+                                <option>Teeth Whitening</option>
+                                <option>Orthodontics</option>
+                                <option>Root Canal Treatment</option>
+                                <option>Emergency Appointment</option>
+                            </select>
+                        </div>
+
+                        <div class="field field--full">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us briefly about your dental concerns or your preferred appointment time."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-card__foot">
+                        <button class="btn btn-primary btn-block" type="submit">
+                            <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
+                            Request Appointment
+                        </button>
+                        <p class="form-note">
+                            <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                            <span>Your details stay private. This is a front-end demonstration form — no data is sent or stored.</span>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
 
 </main>
 
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-<footer class="site-footer">
-
+<!-- ============================================================
+     16. FOOTER
+     ============================================================ -->
+<footer class="footer">
     <div class="container">
-
-        <div class="footer-top">
-
-            <div class="footer-brand">
-
-                <a href="#home" class="brand footer-logo">
-
-                    <span class="brand-mark">
-                        <span></span>
-                        <span></span>
+        <div class="footer__grid">
+            <div class="footer__col">
+                <a class="brand" href="#home" aria-label="Dentéra Dental Clinic — home">
+                    <span class="brand__mark" aria-hidden="true"><i class="fa-solid fa-tooth"></i></span>
+                    <span class="brand__text">
+                        <span class="brand__name">DENTÉRA</span>
+                        <span class="brand__tag">Modern Dentistry</span>
                     </span>
-
-                    <span class="brand-name">DENTÉRA</span>
-
                 </a>
-
-                <p>
-                    Modern dentistry focused on your comfort,
-                    confidence and long-term oral health.
+                <p class="footer__about">
+                    A premium private dental clinic in New York City, combining experienced specialists, advanced digital
+                    technology and genuinely comfortable care for every member of your family.
                 </p>
-
-                <div class="footer-socials">
-
-                    <a href="#" aria-label="Instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-
-                    <a href="#" aria-label="Facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-
-                    <a href="#" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Dentéra on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Dentéra on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="Dentéra on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="Dentéra on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
                 </div>
-
             </div>
 
+            <nav class="footer__col" aria-label="Quick links">
+                <h4>Quick Links</h4>
+                <ul class="footer__links">
+                    <li><a href="#home"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> About Clinic</a></li>
+                    <li><a href="#dentists"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Our Dentists</a></li>
+                    <li><a href="#results"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Before &amp; After</a></li>
+                    <li><a href="#testimonials"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Testimonials</a></li>
+                    <li><a href="#faq"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> FAQ</a></li>
+                </ul>
+            </nav>
 
-            <div class="footer-column">
+            <nav class="footer__col" aria-label="Services">
+                <h4>Services</h4>
+                <ul class="footer__links">
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> General Dentistry</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Cosmetic Dentistry</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Dental Implants</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Teeth Whitening</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Orthodontics</a></li>
+                    <li><a href="#services"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i> Root Canal Treatment</a></li>
+                </ul>
+            </nav>
 
-                <span class="footer-heading">Explore</span>
-
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#dentists">Dentists</a>
-                <a href="#results">Results</a>
-
+            <div class="footer__col">
+                <h4>Contact</h4>
+                <ul class="footer__contact">
+                    <li>
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <span>123 Smile Avenue<br>New York, NY 10001</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone-volume" aria-hidden="true"></i>
+                        <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:hello@denteraclinic.com">hello@denteraclinic.com</a>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                        <span>Mon – Fri: 9:00 AM – 6:00 PM<br>Saturday: 9:00 AM – 2:00 PM</span>
+                    </li>
+                </ul>
             </div>
-
-
-            <div class="footer-column">
-
-                <span class="footer-heading">Treatments</span>
-
-                <a href="#services">General Dentistry</a>
-                <a href="#services">Cosmetic Dentistry</a>
-                <a href="#services">Dental Implants</a>
-                <a href="#services">Orthodontics</a>
-
-            </div>
-
-
-            <div class="footer-column footer-contact">
-
-                <span class="footer-heading">Visit</span>
-
-                <span>
-                    123 Smile Avenue<br>
-                    New York, NY 10001
-                </span>
-
-                <a href="tel:+15551234567">
-                    +1 (555) 123-4567
-                </a>
-
-                <a href="mailto:hello@denteraclinic.com">
-                    hello@denteraclinic.com
-                </a>
-
-            </div>
-
         </div>
 
-
-        <div class="footer-bottom">
-
-            <span>
-                © <span id="currentYear">2026</span> DENTÉRA.
-                All rights reserved.
-            </span>
-
-            <span>
-                Modern Dentistry. Confident Smiles.
-            </span>
-
-            <a href="#home" class="back-top">
-                Back to top
-                <i class="fa-solid fa-arrow-up"></i>
-            </a>
-
+        <div class="footer__bottom">
+            <p>© <span id="currentYear">2026</span> Dentéra Dental Clinic. All Rights Reserved.</p>
+            <div class="footer__legal">
+                <button type="button" data-modal-open>Privacy Policy</button>
+                <button type="button" data-modal-open>Terms of Service</button>
+                <a href="#appointment">Book Appointment</a>
+            </div>
         </div>
-
     </div>
-
 </footer>
 
+<!-- Back to top -->
+<button class="back-to-top" type="button" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
 
-<!-- =====================================================
-     SUCCESS MESSAGE
-===================================================== -->
-<div class="success-message" id="successMessage">
+<!-- Policy / Terms demo modal -->
+<div class="modal" id="policyModal" role="dialog" aria-modal="true" aria-labelledby="policyTitle" aria-hidden="true">
+    <div class="modal__dialog">
+        <div class="modal__head">
+            <h3 id="policyTitle">Privacy Policy &amp; Terms of Service</h3>
+            <button class="modal__close" type="button" data-modal-close aria-label="Close dialog">
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="modal__body">
+            <p>
+                This page is part of a front-end demonstration website for Dentéra Dental Clinic. No real patient data
+                is collected, processed or stored anywhere.
+            </p>
 
-    <div class="success-icon">
-        <i class="fa-solid fa-check"></i>
+            <h4>Privacy Policy</h4>
+            <p>
+                For the purposes of this demo, the appointment form is handled entirely in the browser. Nothing is
+                transmitted to a server. In a production clinic website, personal details would be used solely to
+                contact you about your appointment, stored in an encrypted patient record system and never shared with
+                third parties without your written consent.
+            </p>
+
+            <h4>Terms of Service</h4>
+            <p>
+                Information on this website is provided for general guidance and does not replace an in-person dental
+                examination. Treatment options, timelines and pricing are confirmed in writing after a clinical
+                consultation. Appointment requests are subject to availability and confirmation by our reception team.
+            </p>
+
+            <h4>Questions</h4>
+            <p>
+                Contact us at <a href="mailto:hello@denteraclinic.com">hello@denteraclinic.com</a> or call
+                <a href="tel:+15551234567">+1 (555) 123-4567</a> during opening hours.
+            </p>
+        </div>
     </div>
-
-    <div>
-        <strong>Request received.</strong>
-        <span>
-            Thank you! Our team will be in touch shortly.
-        </span>
-    </div>
-
-    <button type="button" id="closeSuccess" aria-label="Close">
-        <i class="fa-solid fa-xmark"></i>
-    </button>
-
 </div>
 
-
+<!-- Local behaviour -->
 <script src="script.js"></script>
-
 </body>
 </html>
