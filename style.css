@@ -246,6 +246,7 @@ h1.h1 { font-weight: 800; }
     letter-spacing: 0.01em;
     line-height: 1;
     text-align: center;
+    white-space: nowrap;
     cursor: pointer;
     transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease),
                 background-color 0.3s var(--ease), color 0.3s var(--ease), border-color 0.3s var(--ease);
@@ -319,7 +320,9 @@ h1.h1 { font-weight: 800; }
     background: linear-gradient(90deg, var(--dark) 0%, #17505F 55%, var(--primary) 100%);
     color: rgba(255, 255, 255, 0.9);
     font-size: 0.83rem;
-    max-height: 46px;
+    /* max-height is intentionally generous: on small screens the note wraps
+       to two lines and must never be clipped */
+    max-height: 140px;
     overflow: hidden;
     transition: max-height 0.45s var(--ease), opacity 0.35s var(--ease), padding 0.4s var(--ease);
 }
@@ -396,7 +399,8 @@ h1.h1 { font-weight: 800; }
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 22px;
+    flex-wrap: nowrap;
+    gap: clamp(8px, 1.6vw, 22px);
     min-height: var(--nav-h);
     transition: min-height 0.4s var(--ease);
 }
@@ -435,6 +439,7 @@ h1.h1 { font-weight: 800; }
     font-weight: 800;
     letter-spacing: 0.06em;
     color: var(--dark);
+    white-space: nowrap;
 }
 
 .brand__tag {
@@ -496,6 +501,11 @@ h1.h1 { font-weight: 800; }
 
 .nav__call i { color: var(--primary); }
 .nav__call:hover { color: var(--primary); }
+
+/* Header appointment CTA — shrinks to an icon button on small screens
+   so it can never push the hamburger outside the viewport */
+.nav__cta { white-space: nowrap; }
+.nav__cta-text { display: inline; }
 
 /* Hamburger */
 .nav-toggle {
@@ -1193,23 +1203,62 @@ h1.h1 { font-weight: 800; }
 
 .why__strip small { display: block; font-family: var(--font-body); font-weight: 400; color: rgba(255, 255, 255, 0.6); font-size: 0.88rem; margin-top: 6px; }
 
+/* ------------------------------------------------------------
+   FIXED BACKGROUND LAYER (shared)
+   background-attachment: fixed is ignored by most mobile
+   browsers, so the image lives in its own layer. Without JS the
+   layer simply fills the section; script.js switches it to
+   position: fixed and reveals the on-screen slice with clip-path
+   so the parallax works identically on desktop and mobile.
+   ------------------------------------------------------------ */
+.parallax {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.parallax__img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.parallax.is-fixed .parallax__img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    clip-path: inset(0 0 100% 0);
+    -webkit-clip-path: inset(0 0 100% 0);
+    will-change: clip-path;
+}
+
 /* ============================================================
    11. TECHNOLOGY (fixed background)
    ============================================================ */
 .tech {
     position: relative;
-    background-image:
-        linear-gradient(90deg, rgba(9, 33, 42, 0.94) 0%, rgba(9, 33, 42, 0.86) 45%, rgba(9, 33, 42, 0.62) 100%),
-        url("https://images.pexels.com/photos/6501868/pexels-photo-6501868.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1600");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: var(--deep);
     color: rgba(255, 255, 255, 0.78);
     padding-block: var(--section-y);
     overflow: hidden;
 }
 
+.tech .parallax__img {
+    background-image:
+        linear-gradient(90deg, rgba(9, 33, 42, 0.94) 0%, rgba(9, 33, 42, 0.86) 45%, rgba(9, 33, 42, 0.6) 100%),
+        url("https://images.pexels.com/photos/6501868/pexels-photo-6501868.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1600");
+}
+
 .tech__grid {
+    position: relative;
+    z-index: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: clamp(34px, 4vw, 64px);
@@ -1743,15 +1792,16 @@ h1.h1 { font-weight: 800; }
 .cta-band {
     position: relative;
     padding-block: clamp(66px, 8vw, 118px);
-    background-image:
-        linear-gradient(115deg, rgba(9, 33, 42, 0.95) 0%, rgba(11, 114, 133, 0.9) 55%, rgba(9, 33, 42, 0.88) 100%),
-        url("https://images.pexels.com/photos/6629415/pexels-photo-6629415.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1600");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background-color: #0A5C6C;
     overflow: hidden;
     text-align: center;
     color: rgba(255, 255, 255, 0.84);
+}
+
+.cta-band .parallax__img {
+    background-image:
+        linear-gradient(115deg, rgba(9, 33, 42, 0.95) 0%, rgba(11, 114, 133, 0.9) 55%, rgba(9, 33, 42, 0.88) 100%),
+        url("https://images.pexels.com/photos/6629415/pexels-photo-6629415.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=900&w=1600");
 }
 
 .cta-band__inner { position: relative; z-index: 2; max-width: 760px; margin-inline: auto; }
@@ -2284,6 +2334,14 @@ h1.h1 { font-weight: 800; }
 
 @media (max-width: 1100px) {
     .why__grid { grid-template-columns: repeat(2, 1fr); }
+
+    /* the navbar switches to the drawer earlier than the rest of the layout:
+       eight links + brand + CTA need more room than a 992px viewport has,
+       otherwise the CTA shrinks and the menu button is pushed out */
+    .nav__links,
+    .nav__call { display: none; }
+
+    .nav-toggle { display: flex; }
 }
 
 @media (max-width: 992px) {
@@ -2318,8 +2376,6 @@ h1.h1 { font-weight: 800; }
     .about__accent-frame { display: none; }
     .exp-card { left: 12px; bottom: -20px; }
 
-    .tech { background-attachment: scroll; }
-
     .faq__grid { grid-template-columns: 1fr; }
     .faq__intro { position: static; }
     .faq__support { margin-bottom: 8px; }
@@ -2340,8 +2396,12 @@ h1.h1 { font-weight: 800; }
     .topbar__inner { justify-content: center; text-align: center; }
     .topbar__right { display: none; }
 
-    .hero__actions .btn { flex: 1 1 220px; }
+    .hero__actions { gap: 12px; }
+    /* basis stays horizontal (row) — never let it stretch the button height */
+    .hero__actions .btn { flex: 1 1 45%; }
     .hero__badge { display: none; }
+
+    .nav__cta { padding: 0.7rem 0.95rem; font-size: 0.8rem; }
 
     .services__grid,
     .ba__grid,
@@ -2358,7 +2418,6 @@ h1.h1 { font-weight: 800; }
 
     .form-grid { grid-template-columns: 1fr; }
     .testi__wrap { max-width: 100%; }
-    .cta-band { background-attachment: scroll; }
     .cta-band__actions { flex-direction: column; align-items: stretch; }
     .cta-band__actions .btn { width: 100%; }
 
@@ -2390,8 +2449,21 @@ h1.h1 { font-weight: 800; }
 
     .hero { padding-top: 30px; }
     .hero__title { font-size: clamp(2rem, 8.4vw, 2.6rem); }
-    .hero__actions { flex-direction: column; align-items: stretch; }
-    .hero__actions .btn { width: 100%; }
+
+    /* stacked buttons: reset the flex-basis so the pills keep a natural,
+       comfortable height instead of stretching down the column */
+    .hero__actions { flex-direction: column; align-items: stretch; gap: 12px; }
+    .hero__actions .btn { flex: 0 0 auto; width: 100%; }
+
+    /* icon-only appointment button keeps the header on one line */
+    .nav__cta {
+        width: 46px;
+        height: 46px;
+        padding: 0;
+        border-radius: 13px;
+        box-shadow: none;
+    }
+    .nav__cta-text { display: none; }
 
     .hero__floats {
         position: static;
@@ -2440,6 +2512,8 @@ h1.h1 { font-weight: 800; }
     .stats__grid { grid-template-columns: 1fr; gap: 4px; }
     .stat { flex-direction: row; text-align: left; gap: 12px; padding: 12px 8px; border-top: 1px solid var(--line); }
     .stat:first-child { border-top: 0; }
+    .stat:nth-child(even)::before,
+    .stat + .stat::before { display: none; }
     .stat__icon { margin-bottom: 0; }
     .stat__num { font-size: 1.55rem; }
     .stat__label { font-size: 0.82rem; }
@@ -2478,5 +2552,14 @@ h1.h1 { font-weight: 800; }
 
     .reveal { opacity: 1 !important; transform: none !important; }
     .float-card, .exp-card, .tech__chip { animation: none !important; }
-    .tech, .cta-band { background-attachment: scroll; }
+
+    /* parallax layers stay as static section backgrounds without motion */
+    .parallax.is-fixed .parallax__img {
+        position: absolute;
+        height: auto;
+        clip-path: none;
+        -webkit-clip-path: none;
+        will-change: auto;
+    }
+    .parallax__img { transition: none !important; }
 }
